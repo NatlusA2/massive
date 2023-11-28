@@ -1,7 +1,18 @@
+import React, { useState, useEffect } from 'react';
+import { CSSTransition } from 'react-transition-group';
+import '../Card.css'
+import { useInView } from 'react-intersection-observer';
+
+
 const Cara = () => {
+    const [ref, inView] = useInView({
+        triggerOnce: true, // Animasi hanya dijalankan sekali
+      });
+    
     return(
-        <div className="mb-10 h-96  ">
-            <div className="container p-10 ">
+            <CSSTransition in={inView} timeout={500} classNames="fade">
+        <div  className="mb-10 h-96  ">
+            <div ref={ref} className="container p-10 ">
                 <h1 className="text-center text-abu text-2xl font-semibold mb-10">cara kami bekerja</h1>
                 <div className="flex mt-3 ">
                 <div className="cardbox w-64 h-52 mx-20 border-4">
@@ -42,6 +53,7 @@ const Cara = () => {
                 </div>
             </div>
         </div>
+                </CSSTransition>
     )
 }
 

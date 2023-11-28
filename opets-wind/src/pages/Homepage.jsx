@@ -35,7 +35,7 @@ return(
   <div className='mybg'>
       <Navbar onLoginButtonClick={handleToggleLoginForm} />
    
-        <div className="container ml-20 my-20">
+        <div className="container float-right mr-20 my-20">
        
           <Gabung />
       

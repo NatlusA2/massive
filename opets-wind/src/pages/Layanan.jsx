@@ -6,6 +6,7 @@ import Tentangkami from "../component/tentang";
 import Bawah from "../component/footer";
 import Footer from "../component/footerinfo";
 import Cara from "../component/Carakerja";
+import Card from '../component/cardbox'
 const Layanan = () => {
     
 return(
