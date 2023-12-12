@@ -1,63 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-
-
-.mybg{
-    background:url(../src/assets/medium-shot-woman-holding-cute-cat.jpg) no-repeat;
-    background-size: cover;
-    height: 80vh;
+/* .mybg {
+  background: url(../src/assets/medium-shot-woman-holding-cute-cat.jpg)
+    no-repeat;
+  background-size: cover;
+  height: 80vh;
 }
 
-.mybg .container{
-    background-color: white;
-    width: 30%;
-    border: orange solid 1.5px;
-    padding: 10px 15px 10px 20px;
-    display: flex;
-    flex: start;
+.mybg .container {
+  background-color: white;
+  width: 30%;
+  border: orange solid 1.5px;
+  padding: 10px 15px 10px 20px;
+  display: flex;
+  flex: start;
 }
 
-.mybg .container h1{
-    font-size: 25px;
-    font-weight: bold;
-    opacity: 90%;
+.mybg .container h1 {
+  font-size: 25px;
+  font-weight: bold;
+  opacity: 90%;
 }
 
-
-.mybg .container p{
-    padding-top: 5px;
-    font-weight: 400;
-    opacity: 90%;
+.mybg .container p {
+  padding-top: 5px;
+  font-weight: 400;
+  opacity: 90%;
 }
 
-
-
-.mybg .container .btn-gabung{
-    background-color: orange;
-    padding: 5px 4px 5px 4px;   
-    border-radius: 10px;
-    width: 160px;
-    color: white;
+.mybg .container .btn-gabung {
+  background-color: orange;
+  padding: 5px 4px 5px 4px;
+  border-radius: 10px;
+  width: 160px;
+  color: white;
 }
 
-
-.mybg .container a{
-    padding-left: 60px;  
-    color: orange;
+.mybg .container a {
+  padding-left: 60px;
+  color: orange;
 }
 
-.container-desc p{
-
-    margin-left: 590px;
-    width: 1000px;
-}
+.container-desc p {
+  margin-left: 590px;
+  width: 1000px;
+} */
 
 /* ads section */
 /* 
 .container-ads{
     margin-top: 100px;
 } */
+

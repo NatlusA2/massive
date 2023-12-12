@@ -17,7 +17,7 @@ const Navbar = ({onLoginButtonClick}) => {
     return(
       <div>
   <nav>
-    <div className="bg-fix">
+    <div className="bg-fix ">
       <div className="flex flex-col lg:flex-row items-center justify-between">
         <div className="flex items-center pl-14 lg:py-0 border-b lg:border-b-0">
           <div>
@@ -68,10 +68,10 @@ const Navbar = ({onLoginButtonClick}) => {
               about us
             </a> */}
           </div>
-          <div className="  lg:ml-auto">
+          <div className="">
             <button
               onClick={onLoginButtonClick}
-              className="bg-fixed bg-orange-300 rounded-full px-5 mr-20 w-20 h-10 flex items-center lg:py-5 font-medium text-orange-950 hover:text-white"
+              className="bg-fixed bg-lemon  px-5 mr-20 w-20 h-10 flex items-center  font-medium  text-orange-950 hover:text-white"
             >
               Login
             </button>

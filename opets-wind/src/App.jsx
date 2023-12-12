@@ -10,7 +10,7 @@ import Input from './pages/Input'
 import Layanan from './pages/Layanan'
 import Tentang from './pages/Tentang'
 import Gabung from './component/gabung'
-
+import Admin from './pages/admin-dasboard'
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
       <Route path='/Tentang' Component={Tentang} />
       <Route path='/Layanan' Component={Layanan} />
       <Route path='/Input' Component={Input} />
+      <Route path='/admin-dasboard' Component={Admin} />
     </Routes>
     </div>
   )

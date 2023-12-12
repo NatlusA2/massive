@@ -1,23 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { CSSTransition } from 'react-transition-group';
-import { useInView } from 'react-intersection-observer';
-import '../Card.css'; 
+
 
 const Card = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: false, // Mengizinkan animasi untuk dijalankan setiap kali masuk ke dalam layar
-  });
 
-  const [isInView, setIsInView] = useState(false);
- // Memperbarui state saat status inView berubah
- React.useEffect(() => {
-  setIsInView(inView);
-}, [inView]);
 
     return(
       
-           <CSSTransition in={isInView} timeout={500} classNames="fade">
-        <div ref={ref}>
+           
+        <div>
                  <h1 className="text-4xl text-center text-abu my-10 font-medium ">Fitur</h1>
             <div className="container flex justify-center items-baseline gap-16 pb-10">
            
@@ -54,7 +44,7 @@ const Card = () => {
     
     </div>
         </div>
-        </CSSTransition>
+      
     )
 }
 

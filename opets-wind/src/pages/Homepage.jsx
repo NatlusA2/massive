@@ -10,6 +10,8 @@ import LoginForm from '../component/LoginForm'
 import Ads from '../component/Ads'
 import Footer from '../component/footerinfo'
 import Bawah from '../component/footer'
+import Carousel from '../component/Caraousel'
+import Slider from '../component/Caraousel'
 
 const Homepage = () => {
   const [showLoginForm, setShowLoginForm] = useState(false);
@@ -32,19 +34,17 @@ const Homepage = () => {
 
 return(
     <>  
-  <div className='mybg'>
+  <div className='z-50 relative border-b-1 border-b-abu '>
       <Navbar onLoginButtonClick={handleToggleLoginForm} />
-   
-        <div className="container float-right mr-20 my-20">
-       
-          <Gabung />
-      
+     
           {showLoginForm && <LoginForm onClose={handleToggleLoginForm} />}
       </div>
-    </div>
 
+    <div className='z-20'>
+      <Slider />
+    </div>
     
-    <div className='mq  pt-8 pb-10 text-2xl bg-slate-100'>
+    <div className='mq mt-20 pt-8 pb-10 text-2xl bg-slate-100'>
       <h1 className='text-center text-abu  font-medium text-4xl'>thanks to</h1>
     <Marquee images={images}/>
     </div>
