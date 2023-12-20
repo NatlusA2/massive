@@ -1,1 +1,35 @@
 GET http://localhost:5000/penitipan
+
+###
+
+GET http://localhost:5000/penitipan/1
+
+###
+
+POST  http://localhost:5000/penitipan
+Content-Type: application/json
+
+{
+    "nama_penitipan": "sukamaju pets",
+    "nama_pemilik": "Tatang Sudrajat",
+    "alamat": "jl.raya saturnus, kompleks mars 23",
+    "no_hp": "089569696969",
+    "pelayanan": "grooming"
+}
+
+###
+
+PATCH http://localhost:5000/penitipan/1
+Content-Type: application/json
+
+{
+    "nama_penitipan": "sukamundur pets",
+    "nama_pemilik": "Tatang Sudarma",
+    "alamat": "jl.raya venus, kompleks mars 23",
+    "no_hp": "089569696969",
+    "pelayanan": "grooming"
+}
+
+###
+
+DELETE http://localhost:5000/penitipan/2 

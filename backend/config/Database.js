@@ -1,8 +1,13 @@
-import { Sequelize } from "sequelize";
+const express = require ('express');
 
-const Db = new Sequelize('opets_db', 'root','',{
-    host: 'localhost',
-    dialect: 'mysql'
+const mysql = require ('mysql2');
+
+const db = mysql.createConnection({
+    user: "root",
+    host: "localhost",
+    password: "",
+    database: "opets_db",
+
 });
 
-export default Db;
+module.exports = db;
